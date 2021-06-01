@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './service/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Olá Mundo!';
+  //public auth pois será acessado pelo app.component.html
+  //O AuthService é instanciado no app.component.ts pois permite o acessar o método logado() no app.component.html
+  constructor(
+    public auth: AuthService
+  ){
+  }
 }

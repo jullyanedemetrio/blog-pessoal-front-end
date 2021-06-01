@@ -14,7 +14,7 @@ export class AuthService {
     private http:HttpClient
   ) { }
 
-    //Observable mapeia o retorno do método. É obrigatório!
+    //Observable mapeia a entrada do método, o <UserLogin> mapeia o retorno do método. É obrigatório!
     //A palavra reservada this indica que a variável está no escopo global
 
   entrar(userLogin: UserLogin): Observable<UserLogin>{
@@ -23,5 +23,15 @@ export class AuthService {
 
   cadastrar(user: User): Observable<User>{
     return this.http.post<User>(`${environment.server}/usuarios/cadastrar`, user)
+  }
+
+  logado() {
+    let ok: boolean = false
+
+    if (environment.token != ''){
+      ok = true
+    }
+
+    return ok
   }
 }

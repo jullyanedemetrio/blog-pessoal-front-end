@@ -11,6 +11,8 @@ import { AuthService } from '../service/auth.service';
 })
 export class CadastrarComponent implements OnInit {
 
+//Export - Permite acessar a classe globalmente
+
   user: User = new User
   confirmarSenha: string
   tipoUsuario: string
@@ -32,6 +34,7 @@ export class CadastrarComponent implements OnInit {
     this.tipoUsuario = event.target.value
   }
 
+  //Subscribe - Resposta do método
   cadastrar() {
     this.user.tipo = this.tipoUsuario
 
