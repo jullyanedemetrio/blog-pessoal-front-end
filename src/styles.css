@@ -4,3 +4,27 @@ html
 {
   scroll-behavior: smooth;
 }
+
+.bg-green {
+  background-color: #465443;
+}
+
+.fs-44{
+  font-size: 44pt;
+}
+
+.fs-14{
+  font-size: 14pt;
+}
+
+.text-pink {
+  color:#BB5F85
+}
+
+.mate-sc {
+  font-family: 'Mate SC', serif;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
