@@ -34,8 +34,8 @@
           <div class="card-body text-center mate-sc">
             <h4 class="card-title text-dark">{{tema.descricao}}</h4>
 
-            <button class="btn btn-dark mr-3 btn-sm">Editar</button>
-            <button class="btn btn-danger btn-sm">Deletar</button>
+            <button class="btn btn-dark mr-3 btn-sm" [routerLink]="['/tema-edit', tema.id]">Editar</button>
+            <button class="btn btn-danger btn-sm" [routerLink]="['/tema-delete', tema.id]">Deletar</button>
 
           </div>
         </div>
