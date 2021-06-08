@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="row mt-4 d-flex justify-content-center">
+        <div class="col-md-6">
+          <h1 class="text-center text-pink mate-sc">Deletar Postagem</h1>
+        </div>
+      </div>
+
+      <div class="row mb-4 d-flex justify-content-center">
+        <div class="col-md-6 border border-dark rounded mx-4">
+          <h5 class="open-sans text-center text-dark mt-4">Você tem certeza que deseja apagar essa postagem?</h5>
+
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-6 ">
+
+                <div class="card my-4">
+                  <div class="card-body">
+                    <h5 class="card-title text-center m-0">{{postagem.titulo}}</h5>
+                    <p class="card-text text-center mb-3"><small class="text-muted">Tema: {{postagem.tema.descricao}}</small></p>
+                    <p class="card-text text-justify">{{postagem.texto}}</p>
+                    <p class="card-text text-right mb-0"><small class="text-muted">{{postagem.data | date: 'dd/MM/yyyy'}} às {{postagem.data | date: 'HH:mm'}}</small></p>
+                  </div>
+                </div>
+
+                <div class='d-flex justify-content-center mb-3'>
+                  <button class="btn btn-danger mr-4 mate-sc" routerLink='/inicio'>Cancelar</button>
+                  <button class="btn btn-dark mate-sc" (click)='apagar()'>Confimar</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
